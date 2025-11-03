@@ -1,4 +1,4 @@
-# GCP Secrets
+# Github Action Secrets (GCP configs)
 
 ### GCP_WIF_PROVIDER
 
