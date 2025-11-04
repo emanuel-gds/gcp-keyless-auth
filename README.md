@@ -8,7 +8,7 @@
 
 2. Create service account with the relevant role(s)
 
-3. In IAM & Admin → Workload Identity Federation
+3. In IAM & Admin => Workload Identity Federation
 - Create new pool
 
 4. Inside your new pool, create new Provider
@@ -28,7 +28,7 @@ Attribute conditions (optional to limit which branch can authtenticate)
 
 - attribute.repository == "{owner}/{repo}" && attribute.ref == "refs/heads/main"
 
-5. Grant access to service account
+5. Grant access to Service Account (Add principals and assign role to SA created in step 2)
 
 - principalSet://iam.googleapis.com/projects/{project_number}/locations/global/workloadIdentityPools/{github-pool}/attribute.repository/{owner}/{repo}
 
